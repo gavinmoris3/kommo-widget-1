@@ -42,11 +42,11 @@
   </table>
 
   <script>
-    const API_TOKEN = 'YOUR_API_TOKEN_HERE';
-    const SUBDOMAIN = 'youraccount'; // e.g. if your domain is youraccount.kommo.com
+    const API_TOKEN = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjFiNDRhN2RiYmY3OGVhODFlNDA0NDk3Zjc1MzJjZmJmNzZlMDg5ZWY0NDcyMjc1YjJlMmFjYjVjNWI0YWRmODY0MjkwN2RiNWFlOTlhNzA0In0.eyJhdWQiOiI4NDc0NTk3NC1hNzJlLTQ4MzgtYTg1NC04MWJhMzJmYzYxNjAiLCJqdGkiOiIxYjQ0YTdkYmJmNzhlYTgxZTQwNDQ5N2Y3NTMyY2ZiZjc2ZTA4OWVmNDQ3MjI3NWIyZTJhY2I1YzViNGFkZjg2NDI5MDdkYjVhZTk5YTcwNCIsImlhdCI6MTc1Mzg2NDkyNCwibmJmIjoxNzUzODY0OTI0LCJleHAiOjE5MDY4NDgwMDAsInN1YiI6IjEyODg3MjUxIiwiZ3JhbnRfdHlwZSI6IiIsImFjY291bnRfaWQiOjM0MzE2MjM5LCJiYXNlX2RvbWFpbiI6ImtvbW1vLmNvbSIsInZlcnNpb24iOjIsInNjb3BlcyI6WyJjcm0iLCJmaWxlcyIsImZpbGVzX2RlbGV0ZSIsIm5vdGlmaWNhdGlvbnMiLCJwdXNoX25vdGlmaWNhdGlvbnMiXSwiaGFzaF91dWlkIjoiNTI5Mzk3YTgtYWUwYi00NjYyLWIxYTktNjY4NDk0OTMwZTExIiwiYXBpX2RvbWFpbiI6ImFwaS1jLmtvbW1vLmNvbSJ9.R2dRbvy3ETnHm0TWrb5nsC8vloUuKCEd1Xba4sQ1UwLRk-WrpE88_6dafOKVOneG8BG3ioLn8VmcbZr9cM3BOp2mqgtmdYzErWttf4WTEGDkD6akzW_YxATBjnolssLY7UQaAuQIYMP6v9d2LSAlrfpOkKwjQxQBMfJf-MhgnRgwOvdwPDYBb7YjO9pSr-c1TfFSZpyrpDdKAEsuoHttOglQRS2q5tiVBpbACPec26ztD81lziibhMGT6--h0B1NCP6jBxa1J-FYQbOL0CBT5SDylCcoWABVrYeNx4yF2d3XuKAxm59lcSrmkdrf75nlCKGNaP93XIqF1AMXAdkK5A';
+    const SUBDOMAIN = 'mestradawincompe'; 
 
     async function fetchLeads() {
-      const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
+      const today = new Date().toISOString().split('T')[0]; YYYY-MM-DD
 
       const response = await fetch(`https://${SUBDOMAIN}.kommo.com/api/v4/leads?filter[created_at][from]=${today}T00:00:00Z&order=created_at`, {
         headers: {
